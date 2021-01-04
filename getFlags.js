@@ -70,7 +70,7 @@ async function downloadSingleFlag(url, path) {
 async function downloadFlags(metadata) {
 
     for (let i in metadata.flags) {
-        const filename = '_' + metadata.shortnames[i].toLowerCase() + '.png'
+        const filename = metadata.shortnames[i].toLowerCase() + '_.png'
         const path = Path.resolve(_CONFIG.dataPath, 'flags', filename)
         Fs.mkdirSync(Path.dirname(path), {recursive: true})
         console.log(`  [${i}/${metadata.flags.length}] Downloading `, filename, ' in ', path, '...')
