@@ -1,4 +1,4 @@
-# Country and flag data générator for phonenumbers
+# Country and flag data generator for phonenumbers
 
 This is a simple node project that aim at using wikipedia as a source to download country flag images as well as listing 
 country names and letter abbreviation.
